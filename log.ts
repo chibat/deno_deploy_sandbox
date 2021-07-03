@@ -1,5 +1,7 @@
 let count = 0;
 console.log("debug 01");
+console.log(Deno.env.toObject());
+
 // deno-lint-ignore no-explicit-any
 addEventListener("fetch", (event: any) => {
   console.log("debug 02");
